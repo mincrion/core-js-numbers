@@ -206,7 +206,7 @@ function isPrime(n) {
   if (n % 2 === 0) return false;
   const m = Math.sqrt(n);
   for (let i = 3; i <= m; i += 2) {
-    if ( n % i === 0) return false;
+    if (n % i === 0) return false;
   }
   return true;
 }
