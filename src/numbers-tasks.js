@@ -314,10 +314,12 @@ function getSumOfDigits(num) {
  *   15  => false
  */
 function isPowerOfTwo(num) {
-  if (num < 1) {
-    return false;
+  if (num < 1) return false;
+  let n = num;
+  while (n % 2 === 0) {
+    n /= 2;
   }
-  return (num & (num - 1)) === 0;
+  return n === 1;
 }
 
 /**
