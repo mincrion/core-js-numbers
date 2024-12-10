@@ -397,7 +397,7 @@ function toPrecision(number, precision) {
 }
 
 /**
- * Returns the primitive value of a Number object.getNumberValue
+ * Returns the primitive value of a Number object.
  *
  * @param {Number} number
  * @return {number}
@@ -425,8 +425,8 @@ function getNumberValue(number) {
  * 5        => true
  * '5'      => false
  */
-function isNumber(/* number */) {
-  throw new Error('Not implemented');
+function isNumber(number) {
+  return Number.isFinite(number);
 }
 
 /**
