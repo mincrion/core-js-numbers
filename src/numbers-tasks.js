@@ -314,7 +314,9 @@ function getSumOfDigits(num) {
  *   15  => false
  */
 function isPowerOfTwo(num) {
-  if (num < 1) return false;
+  if (num < 1) {
+    return false;
+  }
   return (num & (num - 1)) === 0;
 }
 
