@@ -520,7 +520,7 @@ function roundToLargestInteger(number) {
 }
 
 /**
- * Returns the value of a number rounded to the nearest integer.roundToNearestInteger
+ * Returns the value of a number rounded to the nearest integer.
  *
  * @param {number} number
  * @return {number}
@@ -545,8 +545,8 @@ function roundToNearestInteger(number) {
  * 5.4  => 5
  * -5.5 => -5
  */
-function getIntegerPartNumber(/* number */) {
-  throw new Error('Not implemented');
+function getIntegerPartNumber(number) {
+  return Math.trunc(number);
 }
 
 /**
