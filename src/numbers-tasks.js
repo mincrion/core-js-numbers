@@ -285,7 +285,7 @@ function getSumToN(n) {
 }
 
 /**
- * Returns the sum of the digits of a given number.getSumOfDigits
+ * Returns the sum of the digits of a given number.
  *
  * @param {number} num
  * @return {number}
@@ -296,7 +296,10 @@ function getSumToN(n) {
  *   5   => 5  // 5
  */
 function getSumOfDigits(num) {
-  return num.toString().split('').reduce((s, i) => s + Number(i), 0);
+  return num
+    .toString()
+    .split('')
+    .reduce((s, i) => s + Number(i), 0);
 }
 
 /**
